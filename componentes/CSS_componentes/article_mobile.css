@@ -1,0 +1,63 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-caller{
+    width: 50px;
+    height: 40px;
+    background-color: #1a293d;
+    position: fixed; /* stiky es como un hibrido entre absolute y fixed*/
+    right: 10px;
+    top: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.header-caller__line{
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 10px 1px #101822;
+}
+
+
+
+.container{
+    min-height: 300px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container__cover-img{
+    background-color: #e5e5e5ff;
+    min-height: 200px;
+    width: 100%;
+
+}
+.container__profile-img{
+    background-color: #676d76ff;
+    height: 140px;
+    width: 140px;
+    border-radius: 70px;
+    top: -70px;
+    margin-bottom: -70px;
+    position: relative;
+    
+}
+.container__profile-name{
+    max-width: 400px;
+    font-family: 'Michroma', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 0 10px;
+}
+.container__phrase{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    max-width: 500px;
+    margin: 10px 20px;
+}
