@@ -1,0 +1,24 @@
+/*
+SMACSS:
+BASE
+    las aplicados a elementos HTML (no clases, no ID)
+    casi casi como un normalize
+    Inicializar tu stilo
+TEMA
+    Look and feel de la web o aplicación.
+    las emociones que quieras transmitir.
+ESTADOS
+    Estilos para cambios de estados.
+    cuando das un click a un boton por ejemplo.
+    .is-hide/ .is-how
+LAYOUT
+    MAquetación, sin estilos de temas
+
+MODULOS
+    Los componentes que se repiten a lo largo de la aplicacion.
+
+    los elemtos que no están atados a ningun lado.
+    EJMPLO botones, iconos, widget
+*/
+
+
