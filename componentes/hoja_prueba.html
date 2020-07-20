@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul.nav-items{
+            height: 0;
+            overflow: hidden;
+        }
+        #navigation:target .nav-items{
+            height: 15.8em;
+        }
+
+
+        /* Al hacer clic sobre el enlace que abre el menu esta desaparece */
+        .close{
+            display: none;
+        }
+        #navigation:target .open{
+            display: none;
+        }
+
+        /* Al hacer clic sobre el enlace que abre el menú, aparece el enlace .close que previamente estaba oculto  */
+        #navigation:target .close{
+            display: block;
+        }
+
+
+
+        /*  Agregar efectos     */
+
+        /*  El menú cambia su altura y su color de fohdo mediante una transicion suavizada al abrirse  */
+        #navigation:target .nav-items{
+            background: #ac0b0b none repeat scroll 0 0;
+            height: 15.8em;
+            transition: height 0.4s ease-in-out 0s, background-color 0.9s ease 0s;
+        }
+        /*  El menu cambia su altura y su color de fondo mediante una transicion suavizada al volver a su estado inicial  */
+        ul.nav-items{
+            clear: both;
+            height: 0;
+            overflow: hidden;
+            /* transition :  [property] [duration] [timing-function] [delay] */
+            transition: height 0.4s ease-in-out 0s, background-color 2s ease 0s;
+        }
+
+    </style>
+</head>
+<body>
+    
+<nav id="navigation">
+
+    <div class="control-menu">
+        <a href="#navigation" class="open"><span>ABRIR MENU</span></a>
+        <a href="#" class="close"><span>CERRAR MENú</span></a>
+    </div>
+
+
+    <ul class="nav-items">
+        <li><a href="#Desarrollo web"><span>Desarrollo web</span></a></li>
+        <li><a href="#Desarrollo movil"><span>Desarrollo móvil</span></a></li>
+        <li><a href="#Acceso a datos"><span>Acceso a datos</span></a></li>
+    </ul>
+</nav>
+
+
+</body>
+</html>
