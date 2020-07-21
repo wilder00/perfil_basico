@@ -27,6 +27,13 @@ body{
 }
 
 
+.header-caller--open{
+
+}
+
+
+
+
 /*----------------------------------------------------------*/
 
 .header{
@@ -34,13 +41,13 @@ body{
     min-height: 630px;
     /*position: relative;*/
     background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
+    /*display: block;
+    flex-direction: column;*/
+    
 }
 .header__container{
-    display: block;
-    overflow: scroll;
-    position: sticky;
+    /*display: block;
+    overflow: scroll;*/
 }
 .header__title{
     width: 100%;
@@ -49,12 +56,17 @@ body{
     font-family: 'Michroma', sans-serif;   /*'Montserrat', sans-serif;*/
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 0px;
+        
 }
 .header__title-link{
     text-decoration: none;
     color: #fff;
-    font-size: 18px;
+    display: block;
+    margin: 0 auto;
+    
 }
 .nav{
     font-family: 'Montserrat', sans-serif;;
@@ -66,14 +78,14 @@ body{
 }
 .nav__item{
     
-    display: block;
+    /*display: block;*/
     border-bottom: 1px solid black;
 }
 .nav__link{
     text-decoration: none;
     color: black;
     background-color: white;
-    position: relative;
+    /*position: relative;*/
     display: block;
     padding: 20px 10px;
     
